@@ -88,7 +88,7 @@ innodb_log_file_size = 1G
 innodb_write_io_threads = 16
 innodb_flush_log_at_trx_commit = 0
 ```
-- In MacOSX the my.cnf file is located at `/usr/local/mysql/my.cnf`
+- In MacOSX the my.cnf file is located at `/usr/local/mysql/my.cnf` (or `/usr/local/etc/my.cnf` when installed using `brew`)
 - To find my.cnf location, use below command
 ```
 mysql –-help | grep my.cnf
