@@ -102,7 +102,7 @@ sudo /usr/local/mysql/support-files/mysql.server stop
 sudo /usr/local/mysql/support-files/mysql.server start --innodb-doublewrite=0
 
 With homebrew
-brew services stop /mariadb@10.6
+brew services stop mariadb@10.6
 /opt/homebrew/opt/mariadb@10.6/bin/mysql.server start --innodb-doublewrite=0
 
 ```
