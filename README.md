@@ -97,9 +97,13 @@ mysql –-help | grep my.cnf
 ```
 service mysql restart --innodb-doublewrite=0
 
-In MacOSX,
+In MacOSX (without homebrew),
 sudo /usr/local/mysql/support-files/mysql.server stop 
 sudo /usr/local/mysql/support-files/mysql.server start --innodb-doublewrite=0
+
+With homebrew
+/opt/homebrew/opt/mariadb@10.6/bin/mysql.server start --innodb-doublewrite=0
+
 ```
 - Once import is completed, restart MySQL server again
 ```
@@ -107,7 +111,11 @@ service mysql restart
 
 In MacOSX,
 sudo /usr/local/mysql/support-files/mysql.server stop 
-sudo /usr/local/mysql/support-files/mysql.server start 
+sudo /usr/local/mysql/support-files/mysql.server start
+
+With homebrew
+mysqladmin -u root -p shutdown
+brew services start mariadb@10.6
 ```
 
 ### Usage
